@@ -1,10 +1,10 @@
-from linkedlist import LinkedList
+from linked_list import LinkedList
 
 class HashMap:
 	def __init__(self, length):
 		self.map = []
 		self.length = length
-		for x in xrange(0,length):
+		for x in range(0, length):
 			self.map.append(LinkedList())
 
 	def put(self, key, value):
@@ -16,7 +16,7 @@ class HashMap:
 		found = self.map[hashed % self.length].find_key(key)
 
 		if found is not None:
-				return found.data
+			return found.data
 		
 		return None
 
