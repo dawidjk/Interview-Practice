@@ -39,6 +39,14 @@ class ArrayList:
 
 		return self.array[index]
 
+	def get(self):
+		to_return = []
+
+		for i in range(0,self.length):
+			to_return.append(self.array[i])
+
+		return to_return
+
 	def length(self):
 		return self.length
 
