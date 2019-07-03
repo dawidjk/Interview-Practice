@@ -42,12 +42,3 @@ class LinkedList:
         return temp
       temp = temp.next
 
-if __name__ == '__main__':
-  linked_list = LinkedList()
-  linked_list.add_node(1)
-  linked_list.add_node(2)
-  linked_list.add_node(3)
-
-  print(linked_list.find(3).data)
-  print(linked_list.find(2).data)
-  print(linked_list.find(1).data)
