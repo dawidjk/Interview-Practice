@@ -20,6 +20,14 @@ class HashMap:
 		
 		return None
 
+	def update(self, key, value):
+		if self.get(key) is None:
+			self.put(key, value)
+
+		else:
+			hashed = hash(key)
+			self.map[hashed % self.length].find_key(key).data = value
+
 if __name__ == '__main__':
 	map = HashMap(10)
 	map.put("Hello", "there")

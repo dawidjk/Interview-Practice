@@ -5,7 +5,7 @@ import unittest
 # Assuming ASCII
 characters = 128
 
-def is_unique_easy(string):
+def is_unique(string):
 	seen = [0] * characters
 
 	if len(string) > characters:
@@ -21,15 +21,14 @@ def is_unique_easy(string):
 
 	return True
 
-
 class TestIsUnique(unittest.TestCase):
-	def test_empty_easy(self):
+	def is_unique(self):
 		self.assertTrue(is_unique_easy(""))
 
-	def test_true_easy(self):
+	def is_unique(self):
 		self.assertTrue(is_unique_easy("abczyx"))
 
-	def test_false_easy(self):
+	def is_unique(self):
 		self.assertFalse(is_unique_easy("aabbcc"))
 
 if __name__ == '__main__':
